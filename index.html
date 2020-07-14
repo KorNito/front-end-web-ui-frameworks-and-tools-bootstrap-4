@@ -40,9 +40,11 @@
                     <h1>Ristorante Con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-6 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid" alt="Restaurant logo">
-                    <button class="btn btn-sm bg-warning order-last" onclick="window.location.href='#tableReservationForm'">Reserve Table</button>
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a class="btn btn-warning btn-block" href="#tableReservationForm" role="button"><b>Reserve Table</b></a>
                 </div>
             </div>
         </div>
@@ -96,32 +98,44 @@
         </div>
 
         <div class="row row-content">
-            <div class="card col-sm-8 offset-sm-2 col-12">
+            <div class="card col-12 offset-sm-2 col-sm-8">
                 <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
                 <div class="card-body">
                     <form id="tableReservationForm">
                         <div class="form-group row">
-                            <label class="col-md-4 col-form-label">Number of Guests</label>
-                            <div class="col-md-8">
-                                <input type="radio" name="number-of-guests" value="1">
-                                <label for="1">1</label>
-                                <input type="radio" name="number-of-guests" value="2">
-                                <label for="2">2</label>
-                                <input type="radio" name="number-of-guests" value="3">
-                                <label for="3">3</label>
-                                <input type="radio" name="number-of-guests" value="4">
-                                <label for="4">4</label>
-                                <input type="radio" name="number-of-guests" value="5">
-                                <label for="5">5</label>
-                                <input type="radio" name="number-of-guests" value="6">
-                                <label for="6">6</label>
+                            <p class="col-12 col-lg-2">Number of Guests</p>
+                            <div class="col-12 col-lg-10">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="number-of-guests" value="1">
+                                    <label for="1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="number-of-guests" value="2">
+                                    <label for="2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="number-of-guests" value="3">
+                                    <label for="3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="number-of-guests" value="4">
+                                    <label for="4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="number-of-guests" value="5">
+                                    <label for="5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="number-of-guests" value="6">
+                                    <label for="6">6</label>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-md-3 col-form-label">Date and Time</label>
                             <div>
-                                <input type="text" name="date-and-time" placeholder="Date">
-                                <input type="text" name="date-and-time" placeholder="Time">
+                                <input type="date" name="date-and-time" placeholder="Date">
+                                <input type="time" name="date-and-time" placeholder="Time">
                             </div>
                         </div>
                         <div class="form-group row offset-md-2 col-md-10">
