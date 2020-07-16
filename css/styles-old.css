@@ -66,3 +66,19 @@ body{
     bottom: 0px;
     z-index: 1;
 }
+
+.modal-header{
+    background: #512DA8;
+}
+
+.modal-title{
+    color: #fffaf0; 
+}
+
+.close{
+    color: #fffaf0;
+}
+
+.modal-body{
+    background: #D1C4E9;
+}

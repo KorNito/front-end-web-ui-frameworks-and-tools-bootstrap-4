@@ -30,7 +30,7 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal"><span class="fa fa-sign-in"> Login</span></a>
+                    <a id="login-link"><span class="fa fa-sign-in"> Login</span></a>
                 </span>
             </div>    
         </div>
@@ -153,7 +153,7 @@
                     <img src="img/logo.png" class="img-fluid" alt="Restaurant logo">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a class="btn btn-warning btn-block" data-html="true" title="Or Call us at  <br><strong>+852 12345678</strong>" data-placement="bottom" data-toggle="modal" data-target="#tableReservationModal" role="button"><b>Reserve Table</b></a>
+                    <a class="btn btn-warning btn-block" id="reserveTableButton" role="button"><b>Reserve Table</b></a>
                 </div>
             </div>
         </div>
@@ -315,6 +315,20 @@
                 }
             });
         });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#login-link").click(function(){
+                $('#loginModal').modal('toggle');
+            });    
+        });   
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#reserveTableButton").click(function(){
+                $('#tableReservationModal').modal('toggle');
+            });    
+        });   
     </script>
 </body>
 
